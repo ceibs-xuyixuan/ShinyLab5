@@ -16,7 +16,7 @@ shinyServer(function(input, output) {
   })
   
 
-  output$view <- renderPrint({
+  output$view <- renderTable({
     loadAPIInput()
   })
 })
