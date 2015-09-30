@@ -1,7 +1,11 @@
 library("shiny")
+library("bitops")
+library("RCurl", lib.loc="~/R/win-library/3.2")
+library("jsonlite", lib.loc="~/R/win-library/3.2")
+library("devtools", lib.loc="~/R/win-library/3.2")
+devtools::install_github("xuyixuan/lab5/loadAPI")
 library("loadAPI")
-library("RCurl")
-library("jsonlite")
+
 
 shinyServer(function(input, output) {
 #   data1 <-geocode_GET("sweden")
